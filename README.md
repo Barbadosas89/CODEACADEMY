@@ -1,2 +1,2 @@
-# CODEACADEMY
-klasesdarbelei
+# C-D
+k-d
