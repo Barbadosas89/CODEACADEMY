@@ -4,9 +4,9 @@ table, th, td {
   padding: 10px;
 
 }
-tfoot{
+.tfoot{
 
-
+text-align: right;
   background-color: black;
   color: white;
 }
