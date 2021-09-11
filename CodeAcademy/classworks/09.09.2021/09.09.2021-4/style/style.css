@@ -1,0 +1,10 @@
+body{
+  background-color: #FDFCE5;
+  
+}
+
+p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
