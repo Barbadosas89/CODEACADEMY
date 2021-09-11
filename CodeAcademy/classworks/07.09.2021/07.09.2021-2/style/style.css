@@ -1,52 +1,65 @@
-/* Tags */
 img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
 }
 
-/* Navbar */
-.nav {
-  overflow: hidden;
+article {
   background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+}
+
+body {
+  padding: 30px;
+}
+
+header {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ddd;
+}
+
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
 }
 
 .nav a {
   float: right;
-  color: black;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.nav spam {
-  padding: 23px;
-}
-
-/* First */
-.first {
-  text-align: center;
-  background-color: #ddd;
-}
-
-.first h1 {
-  padding-top: 30px;
-}
-
-.first p {
-  padding-bottom: 80px;
-}
-
-/* Second */
-.second {
+  padding: 15px;
   display: inline-block;
 }
 
-.section1 {
+.nav p {
   display: inline-block;
+}
+
+.first-article {
+  text-align: center;
+}
+
+.second-art-div {
+  width: 65%;
+  display: inline-block;
+}
+
+.third-article img {
+  display: inline-block;
+}
+
+.third {
+  position: relative;
+  bottom: 40px;
+  left: 30px;
   width: 50%;
+  display: inline-block;
 }
 
-.section2 {
+.footer li {
+  list-style-type: none;
   display: inline-block;
+  margin: 0 50px 30px 50px;
 }
