@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  border: 4px solid black;
+  background: #FCFFA6;
+}
+
+.box-2 {
+  width: 60px;
+  height: 60px;
+  padding: 50px;
+  background: #C1FFD7;
+  border: 4px solid red;
+}
+
+.box-3 {
+  width: 45%;
+  height: 100px;
+  background: #B5DEFF;
+  border: 4px solid pink
+}
+
+.box-4 {
+  width: 200px;
+  height: 250px;
+  background: #CAB8FF;
+  border: 5px solid green;
+}
+
+input {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+
+}
