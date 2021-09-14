@@ -1,0 +1,33 @@
+body {
+  padding: 10px;
+  margin: 10px;
+}
+
+section {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid black;
+  margin-bottom: 25px;
+  background: #FFEFBC;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+section>div {
+  text-align: center;
+  flex-grow: 3;
+  border: 3px solid black;
+  padding: 10px;
+  background: rgba(205, 150, 200, 0.2);
+}
