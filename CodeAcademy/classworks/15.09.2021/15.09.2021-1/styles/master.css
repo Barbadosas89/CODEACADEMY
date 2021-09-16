@@ -30,6 +30,7 @@ div {
 @media only screen and (min-width:768px) {
   .div2 {
     height: 200px;
+    flex-grow: 1;
   }
 
   .div3>div {
@@ -40,6 +41,7 @@ div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .div4>div {
@@ -53,6 +55,7 @@ div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .div1>div {
@@ -68,6 +71,7 @@ div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .div3>div {
@@ -79,6 +83,7 @@ div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .div4>div {
