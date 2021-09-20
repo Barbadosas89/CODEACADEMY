@@ -89,7 +89,6 @@ input {
   .dropdown-content {
     display: flex;
     position: relative;
-    padding: 2px;
     box-shadow: none;
   }
 
@@ -99,6 +98,9 @@ input {
 
   .dropdown-content>i {
     padding: 10px;
+  }
+  input{
+    height:30px;
   }
 }
 
