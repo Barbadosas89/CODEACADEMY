@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>codeA</title>
+  <style>
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #FFADAD;
+    justify-content: space-around;
+  }
+  .flex-container > div {
+    background-color: #FFEFBC;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+      @media only screen and (min-width: 786px) {
+      .flex-container {
+        border: dashed 3px green;
+        background-color: yellow;
+      }
+      .flex-container>div {
+        background: #ddd;
+      }
+    }
+  </style>
+  </head>
+  <body>
+
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+</body>
+</html>

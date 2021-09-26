@@ -1,0 +1,65 @@
+img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+article {
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+}
+
+body {
+  padding: 30px;
+}
+
+header {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ddd;
+}
+
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+}
+
+.nav a {
+  float: right;
+  padding: 15px;
+  display: inline-block;
+}
+
+.nav p {
+  display: inline-block;
+}
+
+.first-article {
+  text-align: center;
+}
+
+.second-art-div {
+  width: 65%;
+  display: inline-block;
+}
+
+.third-article img {
+  display: inline-block;
+}
+
+.third {
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  width: 50%;
+  display: inline-block;
+}
+
+.footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 50px 30px 50px;
+}
