@@ -88,7 +88,7 @@ function checkIfAllSmaller(arr,max){
   }
   return true;
 }
-console.log(checkIfAllSmaller([2, 7, 6, 9, 5],5))
+console.log(checkIfAllSmaller(numbers,5))
 
 
 
