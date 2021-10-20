@@ -124,7 +124,7 @@ console.log(filteredByLetter(cities,'M'));
 
 function calculateValue(num1, num2, calc){
   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-    return 'Check inputs!'
+    return 'Its not a valid number!'
   } else if( calc == 'addition'){
     return num1 + num2;
   } else if( calc == 'subtraction'){
