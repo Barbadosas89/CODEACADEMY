@@ -127,18 +127,30 @@ function calculateValue(num1, num2, calc){
   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
     throw new Error ('Its not a valid number!')
   } else if( calc == 'addition'){
-    return num1 + num2;
+    return addItion(num1,num2,calc);
   } else if( calc == 'subtraction'){
-    return num1 - num2;
+    return subTraction(num1,num2,calc);
   } else if( calc == 'multiplication'){
-    return num1 * num2;
+    return multiPlication(num1,num2,calc);
   } else if( calc == 'division'){
-    return num1 / num2;
+    return diVision(num1,num2,calc);
   } else {
     throw new Error ('Its not caluculation operator !')
   }
 }
-console.log(Math.floor(calculateValue(5, 4, 'division'))+Math.floor(calculateValue(10, 4, 'multiplication')))
+function addItion(num1,num2,calc) {
+  return num1 + num2;
+};
+function subTraction(num1,num2,calc) {
+  return num1 - num2;
+}
+function multiPlication(num1,num2,calc) {
+  return num1 * num2;
+}
+function diVision(num1,num2,calc) {
+  return num1 / num2;
+}
+console.log(Math.floor(calculateValue(5, 4, 'multiplication')));
 
 // Pagridinė funkcija bus calculateValue(num1, num2, action), kuri priims tris argumentus: a) num1 - skaičius;b) num2 - skaičius; c) action - (matematinis veiksmas kaip string pvz. “substraction”). Būtina, kad funckija validuotų ar num1 ir num2 yra skaičiai.
 
