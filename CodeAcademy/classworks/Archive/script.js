@@ -135,7 +135,7 @@ function calculateValue(num1, num2, calc){
   } else if( calc == 'division'){
     return diVision(num1,num2,calc);
   } else {
-    throw new Error ('Its not caluculation operator !')
+    throw new Error ('Its not calculation operator !')
   }
 }
 function addItion(num1,num2,calc) {
