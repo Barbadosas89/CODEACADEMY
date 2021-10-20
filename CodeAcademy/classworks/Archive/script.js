@@ -2,32 +2,32 @@
 let numbers = [5, 1, 7, 2, -9, 8, 2,  7, 9, 4, -5, 2, -6, -4, 6];
 // // 1. Parašykite funkciją arrDoubled, kuri sukuria ir grąžina naują masyvą, kurio elementai padauginti iš 2;
 
-let arrDouble = num => numbers.map(num => num * 2);
+let arrDouble = num =>numbers.map(num => num * 2);
 console.log(arrDouble(numbers));
 //
 //
 // // 2. Parašykite funkciją arrMultiplied, kuri sukuria ir grąžina naują masyvą, kurio elementai padauginti iš argumentu nurodyto skaičiaus
 //
-let arrMultiplied = num => numbers.map(num => num * numbers.length);
-console.log(arrMultiplied(numbers));
+let arrMultiplied = (num, numb) => numbers.map(num => num * numb);
+console.log(arrMultiplied(numbers,2));
 //
 //
 //
 // // 3. Parašykite funkciją arrCountTwos, kuri suskaičiuoja dvejetus masyve
-let arrCountTwos = num => numbers.filter(num => num == 2);
-console.log(arrCountTwos(numbers))
+let arrCountTwos = (num, numb) => numbers.filter(num => num == numb);
+console.log(arrCountTwos(numbers,2))
 //
 //
 // // 4. Parašykite funkciją arrIndexOfFirst, kuri grąžintu pirmo surasto, argumentu nurodyto skaičiaus, indeksą masyve. Jei skaičius nerastas funkcija turi grąžinti -1.
 //
-let arrIndexOfFirst = num => num.indexOf(7);
-console.log(arrIndexOfFirst(numbers));
+let arrIndexOfFirst = (num, numb) => num.indexOf(numb);
+console.log(arrIndexOfFirst(numbers,7));
 //
 //
 // // 5. Parašykite funkciją arrIndexOfLast, kuri grąžintu paskutinio surasto, argumentu nurodyto skaičiaus, indeksą masyve. Jei skaičius nerastas funkcija turi grąžinti -1.
 //
-let arrIndexOfLast = num => num.lastIndexOf(2);
-console.log(arrIndexOfLast(numbers));
+let arrIndexOfLast = (num, numb) => num.lastIndexOf(numb);
+console.log(arrIndexOfLast(numbers,1));
 //
 //
 // // 6. Parašykite funkciją reverseNumbers, kuri pakeis skaičius vietomis taip, kad pirmas skaičius taps paskutiniu, antras piešpaskutiniu, o buvęs paskutinis taps pirmu, priešpaskutinis bus antru.
