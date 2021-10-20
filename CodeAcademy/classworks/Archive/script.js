@@ -2,20 +2,20 @@
 let numbers = [5, 1, 7, 2, -9, 8, 2,  7, 9, 4, -5, 2, -6, -4, 6];
 // // 1. Parašykite funkciją arrDoubled, kuri sukuria ir grąžina naują masyvą, kurio elementai padauginti iš 2;
 
-let arrDouble = numbers.map(num => num * 2);
-console.log(arrDouble);
+let arrDouble = num => numbers.map(num => num * 2);
+console.log(arrDouble(numbers));
 //
 //
 // // 2. Parašykite funkciją arrMultiplied, kuri sukuria ir grąžina naują masyvą, kurio elementai padauginti iš argumentu nurodyto skaičiaus
 //
-let arrMultiplied = numbers.map(num => num * numbers.length);
-console.log(arrMultiplied);
+let arrMultiplied = num => numbers.map(num => num * numbers.length);
+console.log(arrMultiplied(numbers));
 //
 //
 //
 // // 3. Parašykite funkciją arrCountTwos, kuri suskaičiuoja dvejetus masyve
-let arrCountTwos = numbers.filter(num => num == 2);
-console.log(arrCountTwos)
+let arrCountTwos = num => numbers.filter(num => num == 2);
+console.log(arrCountTwos(numbers))
 //
 //
 // // 4. Parašykite funkciją arrIndexOfFirst, kuri grąžintu pirmo surasto, argumentu nurodyto skaičiaus, indeksą masyve. Jei skaičius nerastas funkcija turi grąžinti -1.
@@ -112,7 +112,7 @@ let cities = [
 function filteredByLetter(arrCities,letter){
 return arrCities.filter(arr => arr.includes(letter))
 }
-console.log(filteredByLetter(cities,'M'));
+console.log(filteredByLetter(cities,'A'));
 
 
 // 12. Parašykite penkias funkcijas:
@@ -137,7 +137,7 @@ function calculateValue(num1, num2, calc){
     return 'Check inputs!'
   }
 }
-console.log(calculateValue(10, 6, 'division'))
+console.log(calculateValue(10, 3, 'division'))
 
 // Pagridinė funkcija bus calculateValue(num1, num2, action), kuri priims tris argumentus: a) num1 - skaičius;b) num2 - skaičius; c) action - (matematinis veiksmas kaip string pvz. “substraction”). Būtina, kad funckija validuotų ar num1 ir num2 yra skaičiai.
 
