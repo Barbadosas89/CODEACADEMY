@@ -27,7 +27,7 @@ console.log(arrIndexOfFirst(numbers,7));
 // // 5. Parašykite funkciją arrIndexOfLast, kuri grąžintu paskutinio surasto, argumentu nurodyto skaičiaus, indeksą masyve. Jei skaičius nerastas funkcija turi grąžinti -1.
 //
 let arrIndexOfLast = (num, numb) => num.lastIndexOf(numb);
-console.log(arrIndexOfLast(numbers,1));
+console.log(arrIndexOfLast(numbers,8));
 //
 //
 // // 6. Parašykite funkciją reverseNumbers, kuri pakeis skaičius vietomis taip, kad pirmas skaičius taps paskutiniu, antras piešpaskutiniu, o buvęs paskutinis taps pirmu, priešpaskutinis bus antru.
@@ -45,7 +45,7 @@ let bigestSmalest = numbers.sort(function(a, b){
 });
 let smallest = bigestSmalest[0];
 let bigest = bigestSmalest[bigestSmalest.length -1];
-console.log('Smallest: ' +smallest + ', Largest: ' + bigest);
+console.log('Smallest: ' + smallest + ', Largest: ' + bigest);
 //
 // // 8. Parašykite  funkciją checkForLetters, kuri priims du argumentus: Pirmas argumentas bus sakinys (arba žodžiai (-is)) ir antras argumentas bus raidė (kaip string). Funkcija turės suskaičiuoti kiek pirmu agrumentu nurodytame sakinyje/žodžiuose(-yje) yra antru argumentu nurodytų raidžių ir gražinti tų raidžių sumą su sakiniu pvz.: “Raidė “v” sakinyje rasta 4 kartus”.
 //
@@ -70,8 +70,8 @@ let arr2 = [8, 'Hello', 'click', 'u', 7, 4, 'a', 'a', 3, 6, "chair", ,10, 1, 11,
 // // Iškvietus funkciją rezultata bus: [1,3,4,6,7,8,10];
 //
 function cleanArray(arr2){
-  return arr2.filter(function(arr){
-  return arr > 0;
+  return arr2.filter(function(x){
+  return Number(x) > 0;
 }).sort(function(a, b){
     return a-b
 })
@@ -84,12 +84,12 @@ console.log(cleanArray(arr2));
 
 function checkIfAllSmaller(arr,max){
   for(i = 0; i < arr.length; i++){
-      if(arr[i] <= max)
-      return false;
+      if(arr[i] >= max)
+      return true;
   }
-  return true;
+  return false;
 }
-console.log(checkIfAllSmaller(numbers,-89))
+console.log(checkIfAllSmaller(numbers,8))
 
 
 
@@ -137,19 +137,19 @@ function calculateValue(num1, num2, calc){
   } else {
     throw new Error ('Its not calculation operator !')
   }
-}
+};
 function addItion(num1,num2,calc) {
   return num1 + num2;
 };
 function subTraction(num1,num2,calc) {
   return num1 - num2;
-}
+};
 function multiPlication(num1,num2,calc) {
   return num1 * num2;
-}
+};
 function diVision(num1,num2,calc) {
   return num1 / num2;
-}
+};
 console.log(Math.floor(calculateValue(5, 4, 'multiplication')));
 
 // Pagridinė funkcija bus calculateValue(num1, num2, action), kuri priims tris argumentus: a) num1 - skaičius;b) num2 - skaičius; c) action - (matematinis veiksmas kaip string pvz. “substraction”). Būtina, kad funckija validuotų ar num1 ir num2 yra skaičiai.
