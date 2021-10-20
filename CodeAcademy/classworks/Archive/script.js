@@ -9,7 +9,7 @@ console.log(arrDouble(numbers,2));
 // // 2. Parašykite funkciją arrMultiplied, kuri sukuria ir grąžina naują masyvą, kurio elementai padauginti iš argumentu nurodyto skaičiaus
 //
 let arrMultiplied = (num, numb) => numbers.map(num => num * numb);
-console.log(arrMultiplied(numbers,2));
+console.log(arrMultiplied(numbers,3));
 //
 //
 //
@@ -42,9 +42,10 @@ console.log(reverseNumbers(32243));
 // // Iškvietus funkciją rezultata bus: "Mažiausas: 1, Didžiausas: 9"
 let bigestSmalest = numbers.slice().sort(function(a, b){
   return a-b;
-
 });
-console.log('Smallest: ' + bigestSmalest[0] + ', Largest: ' + bigestSmalest[bigestSmalest.length -1]);
+let smallest = bigestSmalest[0];
+let bigest = bigestSmalest[bigestSmalest.length -1];
+console.log('Smallest: ' +smallest + ', Largest: ' + bigest);
 //
 // // 8. Parašykite  funkciją checkForLetters, kuri priims du argumentus: Pirmas argumentas bus sakinys (arba žodžiai (-is)) ir antras argumentas bus raidė (kaip string). Funkcija turės suskaičiuoti kiek pirmu agrumentu nurodytame sakinyje/žodžiuose(-yje) yra antru argumentu nurodytų raidžių ir gražinti tų raidžių sumą su sakiniu pvz.: “Raidė “v” sakinyje rasta 4 kartus”.
 //
@@ -88,7 +89,7 @@ function checkIfAllSmaller(arr,max){
   }
   return true;
 }
-console.log(checkIfAllSmaller(numbers,5))
+console.log(checkIfAllSmaller(numbers,-89))
 
 
 
@@ -112,7 +113,7 @@ let cities = [
 function filteredByLetter(arrCities,letter){
 return arrCities.filter(arr => arr.includes(letter))
 }
-console.log(filteredByLetter(cities,'A'));
+console.log(filteredByLetter(cities,'l'));
 
 
 // 12. Parašykite penkias funkcijas:
@@ -124,7 +125,7 @@ console.log(filteredByLetter(cities,'A'));
 
 function calculateValue(num1, num2, calc){
   if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-    return 'Its not a valid number!'
+    throw new Error ('Its not a valid number!')
   } else if( calc == 'addition'){
     return num1 + num2;
   } else if( calc == 'subtraction'){
@@ -134,10 +135,10 @@ function calculateValue(num1, num2, calc){
   } else if( calc == 'division'){
     return num1 / num2;
   } else {
-    return 'Check inputs!'
+    throw new Error ('Its not caluculation operator !')
   }
 }
-console.log(calculateValue(10, 3, 'division'))
+console.log(Math.floor(calculateValue(5, 4, 'division'))+Math.floor(calculateValue(10, 4, 'multiplication')))
 
 // Pagridinė funkcija bus calculateValue(num1, num2, action), kuri priims tris argumentus: a) num1 - skaičius;b) num2 - skaičius; c) action - (matematinis veiksmas kaip string pvz. “substraction”). Būtina, kad funckija validuotų ar num1 ir num2 yra skaičiai.
 
