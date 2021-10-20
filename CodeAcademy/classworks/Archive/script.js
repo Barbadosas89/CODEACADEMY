@@ -40,7 +40,7 @@ console.log(reverseNumbers(32243));
 // // 7. Parašykite  funkciją, kuri kaip argumentą priims skaičių masyvą ir suras atitinkamai mažiausią ir didžiausią skaičių bei juos grąžins.
 // // Pvz.: Turime masyvą: [8,5,4,2,7,1,9]
 // // Iškvietus funkciją rezultata bus: "Mažiausas: 1, Didžiausas: 9"
-let bigestSmalest = numbers.slice().sort(function(a, b){
+let bigestSmalest = numbers.sort(function(a, b){
   return a-b;
 });
 let smallest = bigestSmalest[0];
