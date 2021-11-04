@@ -1,6 +1,6 @@
 class Motorcycle extends Car {
-    constructor(wheels) {
-        super(wheels);
+    constructor(make, model, year, wheels) {
+        super(make, model, year);
         this.wheels = wheels;
 
     }
