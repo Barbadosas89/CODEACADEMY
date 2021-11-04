@@ -13,11 +13,12 @@ class Car {
 
 
 
-        return this.carAge() > 10 ? '11 or more' : '10 or less';
+        return this.CurrentCarAge() > 10 ? '11 or more' : '10 or less';
 
     }
 
-    carAge() {
+    CurrentCarAge() {
+
         let d = new Date();
 
         return d.getFullYear() - this.year;
