@@ -1,10 +1,3 @@
-let table = document.createElement('table');
-table.setAttribute('id', 'data')
-document.body.appendChild(table)
-
-
-
-
 fetch("https://jsonplaceholder.typicode.com/posts").then(
     res => {
         res.json().then(
@@ -15,11 +8,13 @@ fetch("https://jsonplaceholder.typicode.com/posts").then(
                     let temp = "";
                     data.forEach((title) => {
                         temp += "<tr>";
-                        temp += "<td>" + title.title + "</td>"
+                        temp += "<td>" + title.id + "</td>";
+                        temp += "<td>" + title.title + "</td>";
+                        temp += "<td>" + title.body + "</td>"
                         "</tr>";
                     });
                     document.getElementById('data').innerHTML = temp;
-                    document.body.appendChild(table)
+
                 }
             }
         )
