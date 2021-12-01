@@ -18,6 +18,9 @@ for ($i=1; $i<=9; $i++) {
     echo($i);   
         echo("<br>");    
     }
+
+     echo "<br>";
+
     for($i=1;$i<=9;$i++)
     {
         echo str_repeat($i, $i);
