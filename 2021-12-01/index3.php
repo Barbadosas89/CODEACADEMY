@@ -4,4 +4,4 @@
 //  naujam kintamajam ir atspausdinkite jį ekrane.
 $array=['!', 'Hello', 'world'];
 $new_arr="$array[1] $array[2] $array[0]";
-echo ($new_arr);
+echo $new_arr;
