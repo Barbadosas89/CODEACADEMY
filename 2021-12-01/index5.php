@@ -14,15 +14,15 @@ echo $days['lt'][1], '<br>', $days['en'][3], '<br>';
 
 
 
-$lang = 'en';
+$lang = 'lt';
 
-$en = date('l');
+$date = date('l');
 $today = date('w');
 
 if ($lang === 'en') {
-    $return = $en;
+    $return = "Today is $date";
 } else {
     $result = $days[$lang][$today];
-    $return = $result;
+    $return = "Siandien yra $result";
 }
-echo "Today is $return";
+echo $return;
