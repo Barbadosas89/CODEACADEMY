@@ -6,15 +6,15 @@
 // Naudodamiesi šiuo masyvu, pirmadienį parodykite lietuvių kalba, o trečiadienį - anglų kalba.
 // Sukurkite kintamuosius lang (reikšmės lt arba en) ir parodykite dieną
 $days = [
-    'lt' => ["sekmadienis","pirmadienis", "antradienis", "trečiadienis", "ketvirtadienis", "penktadienis", "šeštadienis"],
-    'en' => ["sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+    'lt' => ["pirmadienis", "antradienis", "trečiadienis", "ketvirtadienis", "penktadienis", "šeštadienis","sekmadienis"],
+    'en' => ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday","sunday"],
 
 ];
-echo $days['lt'][1], '<br>', $days['en'][3], '<br>';
+echo $days['lt'][0], '<br>', $days['en'][2], '<br>';
 
 
 
-$lang = 'lt';
+$lang = 'en';
 
 $date = date('l');
 $today = date('w');
@@ -22,7 +22,8 @@ $today = date('w');
 if ($lang === 'en') {
     $return = "Today is $date";
 } else {
-    $result = $days[$lang][$today];
+    $result = $days[$lang][$today-1];
     $return = "Siandien yra $result";
 }
 echo $return;
+
