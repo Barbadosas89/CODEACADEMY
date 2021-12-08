@@ -11,16 +11,17 @@
     <form method="POST" action="profile.php" enctype="multipart/form-data">
 
         <h1>Registracija i kursus</h1>
+        <p>Fill all required fields*</p>
 
         <hr style="height:2px;border-width:0;color:black;background-color:black">
 
-        <label>Vardas:</label>
+        <label>Vardas*:</label>
         <input type="text" name="user[name]">
 
-        <label>Pavarde:</label>
+        <label>Pavarde*:</label>
         <input type="text" name="user[surname]">
 
-        <label>Miestas:</label>
+        <label>Miestas*:</label>
         <select name="user[cities]">
             <option  value="" name=""></option>
 				<option  value="Klaipeda" name="city">Klaipeda</option>
@@ -28,7 +29,7 @@
 				<option value="Vilnius" name="city">Vilnius</option>
 		</select>
 
-        <h1>Programavimo kalba:</h1>
+        <h1>Programavimo kalba*:</h1>
 
         <input type="checkbox" name="lang[]" value="JS">
         <label>JS</label>
